@@ -1,0 +1,807 @@
+<!--
+Dear sunshine,
+
+The way you glow through my blinds in the morning
+It makes me feel like you missed me.
+Kissing my forehead to help me out of bed.
+Making me rub the sleepy from my eyes.
+
+Are you asking me to come out and play?
+Are you trusting me to wish away a rainy day?
+I look above. The sky is blue.
+It's a secret, but I trust you too.
+
+If it wasn't for you, I could sleep forever.
+But I'm not mad.
+
+I want breakfast. 
+
+The tendrils of my hair illuminate beneath the amber glow.
+Bathing.
+In the distance, a blue-green light flickers.
+A lone figure crosses its path– a silhouette obstructing the eerie glow.
+My heart pounds. The silhouette grows. Closer Closer
+I open my umbrella, casting a shadow to shield me from visibility.
+But I am too late.
+He steps into the streetlight. I gasp and drop my umbrella.
+The light flickers. My heart pounds. He raises his arm.
+
+Time stops.
+
+The only indication of movement is the amber light flickering against his outstretched
+arm.
+The flickering light is in rhythm with the pounding of my heart.
+Teasing me for succumbing to this forbidden emotion.
+Have you ever heard of a ghost feeling warmth before?
+Giving up on understanding, I laugh.
+Understanding is overrated.
+I touch his hand. The flickering stops.
+Ghosts are blue-green. My heart is amber. 
+-->
+
+<!--
+this code is inspired by my love for the 
+color orange. kidding i prefer purple.
+
+please visit komi.rs for more
+quality shitposts
+-->
+
+<!--
+Monkeys can climb
+Crickets can leap
+Horses can race
+Owls can seek
+Cheetahs can run
+Eagles can fly
+People can try
+But that's about it. 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>nxko dot net</title>
+
+<style>
+
+body{
+margin:0;
+cursor: url('cursor.png'), auto;
+font-family:arial;
+background:url("bkg.gif?v=2");
+background-size:cover;
+}
+
+::selection {
+background-color: indigo;
+color:white;
+}
+
+#container{
+width:1000px;
+margin:auto;
+margin-top:40px;
+background:rgba(187,134,252,0.95);
+padding:20px;
+border-radius:10px;
+}
+
+OB#header{
+text-align:center;
+margin-bottom:20px;
+}
+       .sparkle {
+            pointer-events: none;
+            position: fixed;
+            font-family: monospace;
+            font-weight: bold;
+            font-size: 8px;
+            animation: sparkle-fade 0.8s forwards;
+            z-index: 1000;
+            text-shadow: 0 0 3px currentColor;
+        }
+
+        @keyframes sparkle-fade {
+            0% {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+            50% {
+                opacity: 0.8;
+                transform: scale(0.9) translateY(-10px);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(0.6) translateY(-20px);
+            }
+        }
+#layout{
+display:flex;
+gap:20px;
+}
+
+#left{
+width:50%;
+}
+
+#right{
+width:50%;
+}
+
+.box{
+background:rgba(255,255,255,0.1);
+padding:10px;
+margin-bottom:20px;
+border-radius:8px;
+}
+
+.box img.title{
+display:block;
+margin-bottom:10px;
+}
+
+.photos{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:10px;
+}
+
+.photos img{
+width:100%;
+cursor:pointer;
+border-radius:6px;
+height: 180px;
+}
+
+#badges{
+margin-top:20px;
+}
+.blink {
+  animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+  to { visibility: hidden; }
+}
+#page{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:20px;
+    margin-top:40px;
+}
+
+#container{
+    width:1000px;
+}
+#overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:black;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:40px;
+cursor:pointer;
+z-index:999;
+transition:opacity 1s;
+}
+
+#overlay.hidden{
+opacity:0;
+pointer-events:none;
+}
+
+button{
+padding:2px 5px;
+margin-right:5px;
+background-color: plum;
+}
+
+#lightbox{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+display:none;
+justify-content:center;
+align-items:center;
+}
+
+#lightbox img{
+max-width:90%;
+max-height:90%;
+}
+.fallingStar{
+position:fixed;
+top:-20px;
+pointer-events:none;
+font-size:14px;
+z-index:9999;
+animation: fallStar linear forwards;
+}
+
+@keyframes fallStar{
+0%{
+transform:translateY(0);
+opacity:1;
+}
+
+100%{
+transform:translateY(110vh);
+opacity:0;
+}
+}
+a{
+    background: transparent url(rain.gif);
+    color:skyblue;
+    text-shadow: 2px 2px 3px black;
+    text-decoration: none;
+}
+
+#discordStatus{
+    background: transparent url(rain.gif);
+    color:skyblue;
+    text-shadow: 2px 2px 3px black;
+    text-decoration: none;
+}
+</style>
+
+<style>
+body:before {
+content: " ";
+height: 100vh;
+width: 100vw;
+display: block;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 100;
+background-image: url('https://media.tenor.com/YYhMbnpGJ_4AAAAC/my-melody-melody-mark.gif');
+background-size: cover;
+background-repeat: no-repeat;
+background-position:center;
+animation: yourAnimation 3s ease 0s 1 normal forwards;
+pointer-events: none;}
+@keyframes yourAnimation { 0.0%{ opacity: 1;} 75%{ opacity: 1; } 100%{ opacity: 0;} }
+</style>
+</head>
+
+<body>
+
+<div id="overlay">click to enter</div>
+
+<div id="container">
+
+<div id="header">
+<img src="header.png">
+</div>
+
+<div id="layout">
+
+<div id="left">
+
+<div class="box">
+<img src="about.png" class="title">
+<p>
+hi guys<br>
+i am a 16 year old from england<br>
+i like playing on my nintendo 3ds, my fave food is lasagna and my fave color is purple.<br>
+I like sanrio and pusheen cuz im tuff.<br>
+i enjoy all kinds of music<br>
+<img src="kitty.gif">
+<img src="nso.gif"><br>
+<img src="bite.gif">
+<img src="dox.gif">
+<img src="mnw.gif">
+
+</p>
+</div>
+
+
+<div class="box">
+<center><h3><a href="https://discord.gg/4vNwFckVJF">discord</a></h3></center>
+<center><img id="discordBadge" src="https://discord-readme-badge.vercel.app/api?id=331103473439604736" alt="My Discord"></center>
+<center><p>Discord Status: <span id="discordStatus">im either loading or im not online lol</span></p></center>
+</div>
+<script>
+const badge = document.getElementById("discordBadge")
+badge.src = "https://discord-readme-badge.vercel.app/api?id=331103473439604736&t=" + new Date().getTime()
+</script>
+
+<div class="box">
+<center><script type="text/javascript" src="https://counter.websiteout.com/js/30/10/1032/0"></script></center>
+</div>
+
+<div class="box">
+<center><p>I am currently: <img src="https://moods.imood.com/display/uname-komi/trans-1/imood.gif"></p></center>
+</div>
+<div class="box">
+
+<b>Now Playing:</b> <span id="songName">None</span><br>
+<div id="progressBar">[----------]</div>
+<button id="playBtn" onclick="toggleMusic()">❚❚</button>
+<button onclick="skipSong()">▶︎▶︎</button>
+
+</div>
+
+
+
+<div class="box">
+<span class="blink">special thanks:</span>
+<marquee scrollamount="9">myself, zoomedact, char, mack, corwin, reggie fils aime, knowle, quayle, sam, callum, harry, oliver, shong, aexaii, festive, neppy, zhenya, miyamoto, rose bot, fallbirds, the pretendo network, tuff-sang, pongo, nana, coffeeyumx, vxdb, moltevolde, conmanicus, ridhwab, conor brian fitzpatrick, mary-ann mccarra, soph, zay, zulian, simon hypixel, my alter ego (lottie pardoe), john hammond, evelynn, cheddy</marquee>
+</div>
+
+
+<div class="box">
+<span class="blink">internet arguments won:</span>
+<p>91</p>
+</div>
+
+</div>
+
+<div id="right">
+
+<div class="box">
+<img src="links.png" class="title">
+<p>
+Telegram: <a href="https://t.me/KomiBoo">@KomiBoo</a><br>
+Telegram Channel: <a href="https://t.me/thighpictures">@ThighPictures</a><br>
+GitHub: <a href="https://github.com/kxws">@kxws</a><br>
+CodeBerg: <a href="https://codeberg.org/komi">@komi</a><br>
+KeyBase: <a href="https://keybase.io/eepy">@eepy</a><br>
+Minecraft: <a href="https://nmc.is/vmo2">vmo2</a><br>
+Pretendo: <a href="https://pretendo.network">homebrew</a><br>
+Twitter: <a href="https://x.com/">@slittinghearts</a>
+E-Mail: <a>komi@nxko.net</a><br>
+</p>
+</div>
+
+<div class="box">
+
+<div class="photos">
+
+<img src="images-section/1.png">
+<img src="tele.png">
+<img src="signal.png">
+</div>
+
+
+</div>
+
+
+<div class="box">
+<b>my local time and weather</b><br><br>
+
+<div id="clock">the time might b loading idk i suck at js</div>
+<div id="weather">the weather is loading... i hope...</div>
+
+</div>
+
+<div class="box">
+<b>days until <span style="color: orange; text-shadow: 2px 2px 5px black;">halloween</span> (best holiday)</b><br>
+<span id="halloweenCountdown">#yup im loading</span>
+</div>
+
+<div class="box">
+	<center><img src="image.gif"></center>
+</div>
+<div class="box">
+    <center><img id="randomImg"></center>
+</div>
+
+
+</div>
+</div>
+
+<div id="badges" class="box">
+
+
+<img src="badges/badge1.gif">
+<img src="badges/badge2.gif">
+<img src="badges/badge3.gif">
+<img src="badges/badge4.gif">
+<img src="badges/badge5.gif">
+<img src="badges/badge6.gif">
+<img src="badges/badge7.gif">
+<img src="badges/badge8.gif">
+
+
+</div>
+
+<div id="badges" class="box">
+<img width="1000" src="sanrio.jpg">
+</div>
+
+<center><p>copyright 2017-2026 nxko.net</p></center>
+</div>
+
+
+<div id="lightbox">
+<img id="lightbox-img">
+</div>
+</div>
+<script>
+function updateHalloweenCountdown(){
+const today = new Date()
+let year = today.getFullYear()
+let halloween = new Date(year, 9, 31) // October = 9
+if(today > halloween){
+halloween = new Date(year + 1, 9, 31)
+}
+const diff = halloween - today
+const days = Math.ceil(diff / (1000 * 60 * 60 * 24))
+document.getElementById("halloweenCountdown").textContent =
+days + " days"
+}
+updateHalloweenCountdown()
+</script>
+
+<script>
+const images = [
+  "4chan/killmenow.png",
+  "4chan/killmenow.png",
+  "4chan/killmenow.png",
+  "4chan/work.png",
+  "4chan/111.gif",
+  "4chan/67.gif",
+  "4chan/67.gif",
+  "4chan/67.gif",
+  "4chan/67.gif"
+];
+
+const randomImage = images[Math.floor(Math.random() * images.length)];
+document.getElementById("randomImg").src = randomImage;
+</script>
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+const images = document.querySelectorAll(".photos img")
+const lightbox = document.getElementById("lightbox")
+const lightboxImg = document.getElementById("lightbox-img")
+
+images.forEach(img => {
+
+img.addEventListener("click", () => {
+
+lightbox.style.display = "flex"
+lightboxImg.src = img.src
+
+})
+
+})
+
+lightbox.addEventListener("click", () => {
+
+lightbox.style.display = "none"
+
+})
+
+})
+
+</script>
+</div>
+
+
+<audio id="audio"></audio>
+
+<script>
+
+let songs = [
+{file:"music/1.mp3", title:"welcome - boa"},
+{file:"music/2.mp3", title:"skys the limit - biggie"},
+{file:"music/3.mp3", title:"keep floating - mac miller"},
+{file:"music/4.mp3", title:"bby - bladee"},
+{file:"music/5.mp3", title:"love like blood - killing joke"},
+{file:"music/6.mp3", title:"creepers - kid cudi"},
+{file:"music/7.mp3", title:"diablo - mac miller"},
+{file:"music/8.mp3", title:"time - play dead"},
+{file:"music/9.mp3", title:"slow jamz - kanye west"},
+{file:"music/10.mp3", title:"gone - kanye west"},
+{file:"music/11.mp3", title:"amazing - future"},
+{file:"music/12.mp3", title:"dead presidents - jay z"},
+{file:"music/13.mp3", title:"im sorry - uzi"},
+{file:"music/14.mp3", title:"a million - kanye west"},
+{file:"music/15.mp3", title:"mamas boyfriend - kanye west"},
+{file:"music/16.mp3", title:"new body - kanye west"},
+{file:"music/17.mp3", title:"let me be ur fantasy - baby d"},
+{file:"music/18.mp3", title:"maybach music - rick ross"},
+{file:"music/20.mp3", title:"secure the bag - uzi"},
+{file:"music/21.mp3", title:"selfish - kanye west"},
+{file:"music/22.mp3", title:"slayer - carti"},
+{file:"music/23.mp3", title:"the orchids - psychic tv"},
+{file:"music/24.mp3", title:"urgency - uzi"},
+{file:"music/26.mp3", title:"can u be - kanye west"},
+
+]
+
+let audio = document.getElementById("audio")
+let songName = document.getElementById("songName")
+let nowPlaying = document.getElementById("nowPlaying")
+let progressBar = document.getElementById("progressBar")
+
+function randomSong(){
+
+let s = songs[Math.floor(Math.random()*songs.length)]
+
+audio.src = s.file
+audio.play()
+
+songName.textContent = s.title
+
+}
+audio.addEventListener("timeupdate", function(){
+
+if(!audio.duration) return
+
+let progress = audio.currentTime / audio.duration
+let totalBars = 10
+
+let filled = Math.floor(progress * totalBars)
+let empty = totalBars - filled
+
+progressBar.textContent =
+"[" + "█".repeat(filled) + "-".repeat(empty) + "]"
+
+})
+function toggleMusic(){
+
+let btn = document.getElementById("playBtn")
+
+if(audio.paused){
+audio.play()
+btn.textContent = "❚❚"
+}else{
+audio.pause()
+btn.textContent = "▶"
+}
+
+}
+
+function skipSong(){
+
+randomSong()
+
+}
+
+document.getElementById("overlay").onclick = function(){
+
+this.classList.add("hidden")
+randomSong()
+
+}
+
+</script>
+<script src="./oneko.js"></script>
+		<script>
+			let title = 'nxko.net because neko.net was taken grrrr';
+			let i = 0;
+    			setInterval(() => {
+        			document.title = title.substring(0, i + 1);
+        			if (i == 0) {
+            				direction = 1;
+        			} else if (i == title.length) {
+            				direction = -1;
+        			}
+        			i += direction;
+    			}, 300);
+		</script>
+
+<script>
+document.addEventListener("contextmenu", function(e){
+e.preventDefault()
+alert("no ty")
+})
+document.addEventListener("keydown", function(e){
+if(e.ctrlKey && e.key.toLowerCase() === "u"){
+e.preventDefault()
+alert("i cant let u do that..")
+}
+if(e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "i"){
+e.preventDefault()
+alert("oh....")
+}
+if(e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "j"){
+e.preventDefault()
+alert("rude...")
+}
+if(e.ctrlKey && e.shiftKey && e.key.toLowerCase() === "c"){
+e.preventDefault()
+alert("wow!")
+}
+if(e.key === "F12"){
+e.preventDefault()
+alert("i dont like function keys")
+}
+
+})
+
+</script>
+<script>
+
+function updateClock(){
+const now = new Date()
+const time = now.toLocaleTimeString("en-GB", {
+timeZone: "Europe/London",
+hour: "2-digit",
+minute: "2-digit",
+second: "2-digit"
+})
+document.getElementById("clock").textContent = "Time: " + time
+}
+setInterval(updateClock,1000)
+updateClock()
+fetch("https://wttr.in/Derby?format=%t+%C")
+.then(res => res.text())
+.then(data => {
+document.getElementById("weather").textContent =
+"Weather: " + data
+
+})
+
+</script>
+
+    <script>
+        (function() {
+            const sparkleChars = ['✦', '✧', '✯', '✬', '✫', '*'];
+            const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff'];
+            let mouseX = 0;
+            let mouseY = 0;
+            let isMoving = false;
+            let movementTimeout = null;
+            let sparkleInterval = null;
+
+            function createSparkle() {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle';
+                
+                const offsetX = (Math.random() - 0.5) * 20;
+                const offsetY = (Math.random() - 0.5) * 20;
+                
+                sparkle.style.left = (mouseX + offsetX) + 'px';
+                sparkle.style.top = (mouseY + offsetY) + 'px';
+                sparkle.style.color = colors[Math.floor(Math.random() * colors.length)];
+                sparkle.textContent = sparkleChars[Math.floor(Math.random() * sparkleChars.length)];
+                
+                document.body.appendChild(sparkle);
+                
+                setTimeout(() => {
+                    sparkle.remove();
+                }, 800);
+            }
+
+            function updateMousePosition(e) {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+                
+                if (!isMoving) {
+                    isMoving = true;
+                    sparkleInterval = setInterval(createSparkle, 50);
+                }
+                
+                if (movementTimeout) {
+                    clearTimeout(movementTimeout);
+                }
+                
+                movementTimeout = setTimeout(() => {
+                    isMoving = false;
+                    if (sparkleInterval) {
+                        clearInterval(sparkleInterval);
+                        sparkleInterval = null;
+                    }
+                }, 100);
+            }
+
+            function stopSparkles() {
+                isMoving = false;
+                if (sparkleInterval) {
+                    clearInterval(sparkleInterval);
+                    sparkleInterval = null;
+                }
+                if (movementTimeout) {
+                    clearTimeout(movementTimeout);
+                    movementTimeout = null;
+                }
+            }
+
+            document.addEventListener('mousemove', updateMousePosition);
+            document.addEventListener('mouseleave', stopSparkles);
+
+            window.addEventListener('beforeunload', () => {
+                document.removeEventListener('mousemove', updateMousePosition);
+                document.removeEventListener('mouseleave', stopSparkles);
+                stopSparkles();
+            });
+        })();
+        </script>
+        <script>
+
+fetch("https://api.lanyard.rest/v1/users/331103473439604736")
+.then(res => res.json())
+.then(data => {
+
+const activities = data.data.activities
+let customStatus = "no status"
+
+for(let activity of activities){
+
+if(activity.type === 4){ // custom status
+customStatus = (activity.emoji?.name || "") + " " + activity.state
+}
+
+}
+
+document.getElementById("discordStatus").textContent = customStatus
+
+})
+
+</script>
+<script>
+
+function loadDiscordActivity(){
+
+fetch("https://api.lanyard.rest/v1/users/331103473439604736")
+.then(res => res.json())
+.then(data => {
+
+const activities = data.data.activities
+
+let game = "nothing"
+
+for(let activity of activities){
+
+if(activity.type === 0){ // playing game
+game = activity.name
+}
+
+}
+
+document.getElementById("discordGame").textContent = game
+
+})
+
+}
+
+loadDiscordActivity()
+setInterval(loadDiscordActivity, 30000)
+
+</script>
+<script>
+
+const starChars = ['✦','✧','✯','✬','✫','*']
+const starColors = ['#ff0000','#00ff00','#0000ff','#ffff00','#ff00ff','#00ffff']
+
+function createFallingStar(){
+
+const star = document.createElement("div")
+star.className = "fallingStar"
+
+star.textContent = starChars[Math.floor(Math.random()*starChars.length)]
+
+star.style.left = Math.random()*window.innerWidth + "px"
+
+star.style.color = starColors[Math.floor(Math.random()*starColors.length)]
+
+star.style.animationDuration = (Math.random()*3+2) + "s"
+
+document.body.appendChild(star)
+
+setTimeout(()=>{
+star.remove()
+},5000)
+
+}
+
+setInterval(createFallingStar,200)
+
+</script>
+</body>
+</html>
