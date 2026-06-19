@@ -446,9 +446,9 @@ E-Mail: <a>komi@nxko.net</a><br>
 function updatebirthdayCountdown(){
 const today = new Date()
 let year = today.getFullYear()
-let birthday = new Date(year, 7, 26)
+let birthday = new Date(year, 6, 26)
 if(today > birthday){
-birthday = new Date(year + 1, 7, 26)
+birthday = new Date(year + 1, 6, 26)
 }
 const diff = birthday - today
 const days = Math.ceil(diff / (1000 * 60 * 60 * 24))
