@@ -400,6 +400,11 @@ E-Mail: <a>komi@nxko.net</a><br>
 </div>
 
 <div class="box">
+<b>days until <span style="color: indigo; text-shadow: 2px 2px 5px black;">my birthday</span> (tuff)</b><br>
+<span id="birthdayCountdown">#yup im loading</span>
+</div>
+
+<div class="box">
 	<center><img src="image.gif"></center>
 </div>
 <div class="box">
@@ -437,6 +442,21 @@ E-Mail: <a>komi@nxko.net</a><br>
 <img id="lightbox-img">
 </div>
 </div>
+<script>
+function updatebirthdayountdown(){
+const today = new Date()
+let year = today.getFullYear()
+let birthday = new Date(year, 7, 26)
+if(today > birthday){
+birthday = new Date(year + 1, 7, 26)
+}
+const diff = birthday - today
+const days = Math.ceil(diff / (1000 * 60 * 60 * 24))
+document.getElementById("birthdayCountdown").textContent =
+days + " days"
+}
+updatebirthdayCountdown()
+</script>
 <script>
 function updateHalloweenCountdown(){
 const today = new Date()
